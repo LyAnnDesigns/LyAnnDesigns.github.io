@@ -1,0 +1,289 @@
+/* Fonts */
+@font-face {
+  font-family: 'brandon_grotesquemedium';
+  src: url("../fonts/brandon_med-webfont.eot");
+  src: url("../fonts/brandon_med-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_med-webfont.woff2") format("woff2"), url("../fonts/brandon_med-webfont.woff") format("woff"), url("../fonts/brandon_med-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesque_regularRg';
+  src: url("../fonts/brandon_reg-webfont.eot");
+  src: url("../fonts/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_reg-webfont.woff2") format("woff2"), url("../fonts/brandon_reg-webfont.woff") format("woff"), url("../fonts/brandon_reg-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'brandon_grotesquebold';
+  src: url("../fonts/brandon_bld-webfont.eot");
+  src: url("../fonts/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_bld-webfont.woff2") format("woff2"), url("../fonts/brandon_bld-webfont.woff") format("woff"), url("../fonts/brandon_bld-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif; }
+
+h2 {
+  font-family: "brandon_grotesquebold";
+  text-transform: uppercase; }
+
+a {
+  color: #58B8EE; }
+
+/* Header Styles */
+header {
+  position: relative;
+  min-width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: blue;
+  background: linear-gradient(45deg, #58B8EE 0%, #F99BBB 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tagline {
+  text-transform: uppercase;
+  font-family: "brandon_grotesquemedium";
+  text-align: center; }
+  .tagline h1 {
+    font-size: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+    letter-spacing: 18px;
+    padding-left: 16px; }
+  .tagline h2 {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px; }
+
+.logo {
+  width: 35vh;
+  height: 35vh;
+  background-image: url("../img/la-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px auto; }
+
+.down-arrow {
+  width: 35px;
+  height: 24px;
+  background-image: url("../img/triangle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0; }
+
+/* About Styles */
+.about-lyann {
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0; }
+  .about-lyann h2 {
+    font-size: 30px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin: 75px 0 40px 0; }
+  .about-lyann p {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 27px;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center; }
+
+/* Team Styles */
+.the-team {
+  background-color: #B9D1ED;
+  min-width: 100%;
+  margin-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative; }
+  .the-team #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #B9D1ED;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+
+.team-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  text-align: center; }
+  .team-wrapper .member {
+    margin: 30px 40px; }
+    .team-wrapper .member h2 {
+      font-size: 20px; }
+    .team-wrapper .member .name-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-transform: uppercase; }
+      .team-wrapper .member .name-card .member-picture {
+        height: 150px;
+        width: 150px;
+        border-radius: 90px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto; }
+      .team-wrapper .member .name-card .member-name {
+        font-family: "brandon_grotesquebold";
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        margin-bottom: 5px; }
+      .team-wrapper .member .name-card .member-title {
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        font-family: "brandon_grotesque_regularRg"; }
+    .team-wrapper .member .member-info {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center; }
+      .team-wrapper .member .member-info > div {
+        margin: 0 20px; }
+    .team-wrapper .member .member-about {
+      margin-top: 30px;
+      max-width: 50%; }
+      .team-wrapper .member .member-about p {
+        font-size: 15px;
+        line-height: 27px;
+        letter-spacing: 0.5px; }
+    .team-wrapper .member .member-skills ul {
+      list-style: none;
+      padding-left: 0; }
+      .team-wrapper .member .member-skills ul li {
+        font-size: 15px;
+        padding: 5px;
+        letter-spacing: 0.5px; }
+
+.brandon .member-picture {
+  background-image: url("../img/brandon.jpg"); }
+
+.nicole .member-picture {
+  background-image: url("../img/nicole.JPG"); }
+
+#rings {
+  background-image: url("../img/rings.png");
+  width: 50px;
+  height: 39px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+/* Contact Styles */
+.contact h1 {
+  font-family: "brandon_grotesquebold";
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin: 0;
+  padding-top: 130px;
+  padding-bottom: 80px; }
+.contact form {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+  .contact form input[type=text], .contact form input[type=email] {
+    min-width: 40%;
+    height: 35px;
+    margin: 0 2%;
+    border: black solid 1px;
+    font-family: "brandon_grotesquemedium";
+    font-size: 16px;
+    letter-spacing: 0.8px; }
+  .contact form textarea {
+    letter-spacing: 0.8px;
+    display: block;
+    min-width: 85%;
+    height: 243px;
+    margin: 40px auto;
+    border: 1px solid black;
+    font-family: "brandon_grotesquemedium";
+    font-size: 16px; }
+    .contact form textarea:placeholder-shown {
+      padding-left: 10px; }
+  .contact form input[type=submit] {
+    background: white;
+    min-width: 64px;
+    height: 35px;
+    display: block;
+    border: 1px solid black;
+    font-size: 16px;
+    font-family: "brandon_grotesquemedium";
+    letter-spacing: 0.8px; }
+    .contact form input[type=submit]:hover {
+      cursor: pointer; }
+  .contact form input:placeholder-shown {
+    padding-left: 10px; }
+  .contact form .submit-button-wrapper {
+    max-width: calc(85% + 12px);
+    margin: 40px auto 110px auto; }
+
+/* Footer Styles */
+footer {
+  min-width: 100%;
+  height: 62px;
+  font-size: 12px;
+  font-family: "brandon_grotesque_regularRg";
+  letter-spacing: 1.25px;
+  text-align: center;
+  background-color: #D4BFE4; }
+  footer p {
+    padding-top: 24px; }
+
+/* Mobile Styles */
+@media screen and (max-width: 650px) {
+  .tagline h1 {
+    font-size: 45px;
+    line-height: 50px; }
+  .tagline h2 {
+    font-size: 18px; }
+
+  .about-lyann p {
+    max-width: 80%; }
+
+  .the-team .team-wrapper {
+    flex-direction: column; }
+    .the-team .team-wrapper .member {
+      margin-bottom: 40px; }
+    .the-team .team-wrapper .member-info {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center; }
+      .the-team .team-wrapper .member-info .member-about {
+        min-width: 80%;
+        margin: 20px auto; }
+      .the-team .team-wrapper .member-info .member-skills {
+        min-width: 80%;
+        margin: 20px auto; }
+  .the-team #rings {
+    position: static;
+    margin-bottom: 40px; }
+
+  .contact input[type=text], .contact input[type=email] {
+    min-width: 85% !important;
+    margin: 10px !important; }
+  .contact textarea {
+    margin-top: 10px !important; } }
