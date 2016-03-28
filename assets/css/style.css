@@ -22,7 +22,8 @@ html, body {
   margin: 0;
   padding: 0;
   position: relative;
-  font-family: "Source Sans Pro", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300; }
 
 h2 {
   font-family: "brandon_grotesquebold";
@@ -172,6 +173,12 @@ header {
         font-size: 15px;
         line-height: 27px;
         letter-spacing: 0.5px; }
+      .team-wrapper .member .member-about h2 {
+        font-family: "brandon_grotesquemedium";
+        letter-spacing: 1.5px; }
+    .team-wrapper .member .member-skills h2 {
+      font-family: "brandon_grotesquemedium";
+      letter-spacing: 1.5px; }
     .team-wrapper .member .member-skills ul {
       list-style: none;
       padding-left: 0; }
