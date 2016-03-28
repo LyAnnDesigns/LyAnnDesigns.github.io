@@ -37,12 +37,18 @@ header {
   min-width: 100%;
   height: 100vh;
   text-align: center;
-  background: blue;
-  background: linear-gradient(45deg, #58B8EE 0%, #F99BBB 100%);
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center; }
 
+@media screen and (min-width: 651px) {
+  .tagline {
+    position: absolute;
+    top: 28vh;
+    left: 15vw; } }
 .tagline {
   text-transform: uppercase;
   font-family: "brandon_grotesquemedium";
@@ -51,16 +57,17 @@ header {
     font-size: 100px;
     margin: 0 auto;
     line-height: 100px;
-    letter-spacing: 18px;
+    letter-spacing: 26px;
     padding-left: 16px; }
   .tagline h2 {
+    font-size: 28px;
     margin: 0 auto;
     margin-bottom: 20px;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1px; }
 
 .logo {
-  width: 35vh;
-  height: 35vh;
+  width: 25vh;
+  height: 25vh;
   background-image: url("../img/la-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -98,7 +105,7 @@ header {
 
 /* Team Styles */
 .the-team {
-  background-color: #B9D1ED;
+  background-color: #F1EBEB;
   min-width: 100%;
   margin-top: 50px;
   padding-top: 100px;
@@ -109,7 +116,7 @@ header {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 100px solid #B9D1ED;
+    border-top: 100px solid #F1EBEB;
     position: absolute;
     bottom: -40px;
     left: 0;
@@ -248,7 +255,7 @@ footer {
   font-family: "brandon_grotesque_regularRg";
   letter-spacing: 1.25px;
   text-align: center;
-  background-color: #D4BFE4; }
+  background-color: #E9E9E9; }
   footer p {
     padding-top: 24px; }
 
@@ -287,3 +294,13 @@ footer {
     margin: 10px !important; }
   .contact textarea {
     margin-top: 10px !important; } }
+/* Media Queries for Header */
+@media screen and (min-width: 2000px) {
+  .tagline h1 {
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: 50px;
+    padding-left: 38px; }
+  .tagline h2 {
+    font-size: 45px;
+    letter-spacing: 1.2px; } }
