@@ -285,6 +285,7 @@ footer {
   .the-team .team-wrapper {
     flex-direction: column; }
     .the-team .team-wrapper .member {
+      margin: 0 auto;
       margin-bottom: 40px; }
     .the-team .team-wrapper .member-info {
       flex-direction: column;
