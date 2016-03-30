@@ -90,7 +90,7 @@ header {
 .about-lyann {
   min-width: 100%;
   margin: 0 auto;
-  padding: 40px 0; }
+  padding: 40px 0 80px 0; }
   .about-lyann h2 {
     font-size: 30px;
     letter-spacing: 2.5px;
@@ -110,7 +110,7 @@ header {
   min-width: 100%;
   margin-top: 50px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   position: relative; }
   .the-team #triangle-down {
     width: 0;
@@ -132,9 +132,11 @@ header {
   flex-direction: row;
   text-align: center; }
   .team-wrapper .member {
-    margin: 30px 40px; }
+    margin: 30px 40px;
+    max-width: 45%; }
     .team-wrapper .member h2 {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-bottom: 30px; }
     .team-wrapper .member .name-card {
       display: flex;
       flex-direction: column;
@@ -163,12 +165,13 @@ header {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      justify-content: center; }
+      justify-content: center;
+      min-width: 100%; }
       .team-wrapper .member .member-info > div {
-        margin: 0 20px; }
+        margin: 0 30px; }
     .team-wrapper .member .member-about {
       margin-top: 30px;
-      max-width: 50%; }
+      max-width: 45%; }
       .team-wrapper .member .member-about p {
         font-size: 15px;
         line-height: 27px;
@@ -176,16 +179,18 @@ header {
       .team-wrapper .member .member-about h2 {
         font-family: "brandon_grotesquemedium";
         letter-spacing: 1.5px; }
-    .team-wrapper .member .member-skills h2 {
-      font-family: "brandon_grotesquemedium";
-      letter-spacing: 1.5px; }
-    .team-wrapper .member .member-skills ul {
-      list-style: none;
-      padding-left: 0; }
-      .team-wrapper .member .member-skills ul li {
-        font-size: 15px;
-        padding: 5px;
-        letter-spacing: 0.5px; }
+    .team-wrapper .member .member-skills {
+      max-width: 45%; }
+      .team-wrapper .member .member-skills h2 {
+        font-family: "brandon_grotesquemedium";
+        letter-spacing: 1.5px; }
+      .team-wrapper .member .member-skills ul {
+        list-style: none;
+        padding-left: 0; }
+        .team-wrapper .member .member-skills ul li {
+          font-size: 15px;
+          padding: 5px;
+          letter-spacing: 0.5px; }
 
 .brandon .member-picture {
   background-image: url("../img/brandon.jpg"); }
